@@ -39,6 +39,8 @@ droppedFeatures = ["Id", "groupId", "matchId", "killPoints", "maxPlace", "roadKi
 
 # Setting up the training dataset
 
+# Replace invalid winPlacePerc with average
+train_original['winPlacePerc'].fillna((train_original['winPlacePerc'].mean()), inplace=True)
 # Remove unwanted features from the training data
 print("Cleaning train")
 train_cleanedFeatures = train_original.drop(droppedFeatures, axis=1).copy()
