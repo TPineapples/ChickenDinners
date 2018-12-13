@@ -8,7 +8,7 @@ Predicting the outcome for PUBG games as part of an international evaluation
 - [scikit_learn 0.20.1](https://scikit-learn.org/stable/index.html)
 ---
 
-If accessing the repo from github you must download the data set from:
+You will need to download the datasets from:
  [Kaggle's website](https://www.kaggle.com/c/pubg-finish-placement-prediction/data)
  
 Download the files `test_V2.csv` and `train_V2.csv`, rename them to `test.csv` and `train.csv` respectively.
